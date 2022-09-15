@@ -1,0 +1,10 @@
+.main-image {
+    border: 8px solid #FF6600;
+    width: 80%;
+    margin: 2em;
+    margin-top: 0.5em;
+}
+
+#main {
+    text-align: center;
+}
