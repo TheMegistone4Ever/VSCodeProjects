@@ -15,7 +15,7 @@ body {
     grid-auto-rows: minmax(10rem, auto);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
     body {
         grid-template-areas: none
         'header'
