@@ -17,7 +17,7 @@ body {
 #main-header {
     display: grid;
     grid-area: header;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     background-color: #666;
     padding: 2%;
 }
@@ -90,6 +90,10 @@ body {
     color: #F96;
 }
 
+#main-footer div {
+    padding: 2%;
+}
+
 .sign {
     width: 15rem;
     text-align: center;
@@ -115,12 +119,21 @@ body {
         grid-template-columns: 1fr;
     }
 
-    #main-header, #main-center, #main-footer {
+    #main-header, #main-center {
         grid-template-columns: 1fr;
     }
 
+    #main-footer {
+        grid-template-columns: 1fr 1fr;
+    }
+
     #main-footer div {
-        padding: 2%;
         width: 15rem;
+    }
+}
+
+@media (max-width: 700px) {
+    #main-footer {
+        grid-template-columns: 1fr;
     }
 }
