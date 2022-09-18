@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    border: 2px solid darkgreen;
 }
 
 body {
@@ -19,29 +18,89 @@ header {
     display: grid;
     grid-area: header;
     grid-template-columns: 1fr 1fr;
+    background-color: #666666;
+    padding: 2%;
 }
 
-nav {
+#main-header h1 {
+    color: white;
+    font-size: 3rem;
+}
+
+#main-nav {
     grid-area: nav;
-
+    text-align: center;
+    line-height: 3rem;
+    background-color: #CCCCCC;
 }
 
+#main-nav a {
+    color: black;
+    font-size: 1.5rem;
+}
 
-div.main-center {
+#main-center {
     display: grid;
     grid-area: main;
     grid-template-rows: 4.5rem 1fr;
 }
 
-aside {
-    grid-area: aside;
-
+#top-main-section {
+    text-align: center;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    border-top: 6px solid #FF6600;
+    border-bottom: 6px solid #FF6600;
+    background-color: #999999;
 }
 
-footer {
+#main {
+    padding: 2rem;
+    font-size: 1.2rem;
+}
+
+#main p {
+    margin-bottom: 2rem;
+    line-height: 1.5rem;
+    word-wrap: break-word;
+}
+
+#main-aside {
+    grid-area: aside;
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+    background-color: #CCCCCC;
+}
+
+#main-footer {
     display: grid;
     grid-area: footer;
     grid-template-columns: 2fr 1fr 1fr 1fr;
+    background-color: #666666;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    padding: 1rem;
+    justify-items: center;
+}
+
+#main-footer h4 {
+    padding-bottom: 1rem;
+    color: white;
+}
+
+.sign {
+    width: 15rem;
+    text-align: center;
+    border: 5px solid black;
+    margin: auto auto;
+}
+
+.line {
+    width: 95%;
+    margin: auto;
+    border-top: 3px dashed black;
+    color: black;
 }
 
 @media (max-width: 900px) {
@@ -55,7 +114,12 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    header, div.main-center, footer {
+    #main-header, #main-center, #main-footer {
         grid-template-columns: 1fr;
+    }
+
+    #main-footer div {
+        padding: 2%;
+        width: 15rem;
     }
 }
