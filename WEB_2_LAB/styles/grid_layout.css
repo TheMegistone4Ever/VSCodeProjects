@@ -20,6 +20,7 @@ body {
     grid-template-columns: 2fr 1fr;
     background-color: #666;
     padding: 2%;
+    justify-items: center;
 }
 
 #main-header h1 {
@@ -42,7 +43,7 @@ body {
 #main-center {
     display: grid;
     grid-area: main;
-    grid-template-rows: 4.5rem 1fr;
+    grid-template-rows: minmax(4.5rem, auto) 1fr;
 }
 
 #top-main-section {
@@ -83,6 +84,7 @@ body {
     text-transform: uppercase;
     padding: 1rem;
     justify-items: center;
+    font-size: 1.2rem;
 }
 
 #main-footer h4 {
@@ -98,7 +100,7 @@ body {
     width: 15rem;
     text-align: center;
     border: 5px solid;
-    margin: auto;
+    margin: 1.5rem;
     font-size: 1.5em;
 }
 
@@ -125,6 +127,7 @@ body {
 
     #main-footer {
         grid-template-columns: 1fr 1fr;
+        font-size: 2rem;
     }
 
     #main-footer div {
