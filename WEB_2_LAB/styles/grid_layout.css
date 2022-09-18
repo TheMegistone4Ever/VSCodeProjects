@@ -109,7 +109,7 @@ body {
     border-top: 3px dashed #666;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     body {
         grid-template-areas:
         'header'
