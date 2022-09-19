@@ -1,10 +1,13 @@
 .main-image {
     border: 8px solid #FF6600;
     width: 80%;
-    margin: 2em;
-    margin-top: 0.5em;
+    margin: 0.5rem 2rem 0 2rem;
 }
 
 #main {
     text-align: center;
+}
+
+.imageinfo {
+    margin-top: 1.5rem;
 }
