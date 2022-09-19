@@ -1,18 +1,8 @@
 .mapouter {
-    position: relative;
-    text-align: right;
-    width: 100%;
     height: 25em;
-    margin: 2%;
-}
-
-.gmap_canvas {
-    overflow: hidden;
-    background: none;
-    width: 100%;
-    height: 25em;
+    border: 4px solid #F96;
 }
 
 .gmap_iframe {
-    height: 25em;
+    height: 100%;
 }
