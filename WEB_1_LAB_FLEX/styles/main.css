@@ -133,6 +133,7 @@
 
     #top-sign, #footer-sign {
         margin: auto;
+        width: auto;
     }
     
     #top-right-main {
