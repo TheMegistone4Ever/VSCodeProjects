@@ -138,7 +138,6 @@ body {
 @media (max-width: 600px) {
     #main-footer {
         grid-template-columns: 1fr;
-        font-size: 1.2rem;
     }
 }
 
