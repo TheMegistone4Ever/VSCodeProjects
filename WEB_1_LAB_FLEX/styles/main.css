@@ -130,11 +130,6 @@
         flex-direction: column;
         align-items: center;
     }
-
-    #top-sign, #footer-sign {
-        margin: auto;
-        width: auto;
-    }
     
     #top-right-main {
         flex-direction: column;
@@ -142,6 +137,11 @@
 
     #main-footer > div {
         width: 25%;
+    }
+
+    #top-sign, #footer-sign {
+        margin: auto;
+        width: auto;
     }
 }
 
