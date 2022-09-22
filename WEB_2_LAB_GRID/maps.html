@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weblab</title>
     <link rel="stylesheet" href="./styles/grid_layout.css">
-    <link rel="stylesheet" href="./styles/imagestyle.css">
 </head>
 <body>
     <header id="main-header">
@@ -18,28 +17,18 @@
         <hr class="line">
         <a href="index.html">Головна<br></a>
         <a href="lists.html">Списки робіт<br></a>
-        <a href="images.html" style="text-decoration: underline solid #F96 .3rem;">Зображення<br></a>
+        <a href="images.html">Зображення<br></a>
         <a href="links.html">Посилання<br></a>
-        <a href="maps.html">Де ми на карті<br></a>
+        <a href="maps.html" style="text-decoration: underline solid #F96 .3rem;">Де ми на карті<br></a>
     </nav>
     <div id="main-center">
         <section id="top-main-section">
             <p>Є питання? - звертайтеся!</p>
         </section>
         <main id="main">
-            <h2>Деякі зображення пов'язані із ШІ:</h2>
-            <div id="imagebox">
-                <h4 class="imageinfo">NVIDIA DEMO</h4>
-                <img src="media/images/nvidia-ai-demo-og-1200x630-2.jpg" alt="NVIDIA DEMO" class="main-image" usemap="#workmap">
-                <map name="workmap">
-                    <area shape="poly" coords="144,40, 300,141, 320,341, 145,241" alt="Mountains" href="https://upload.wikimedia.org/wikipedia/commons/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg" target="_blank">
-                    <area shape="poly" coords="350,60, 520,160, 520,362, 350,262" alt="Starry night" href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1200px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg" target="_blank">
-                    <area shape="poly" coords="538,58, 712,160, 713,359, 537,265" alt="Picture mountains" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST8V7lc4N4YSMXB1p98oB10wDmbbFUPkADJQ&usqp=CAU" target="_blank">
-                </map>
-                <h4 class="imageinfo">NVIDIA TECH</h4>
-                <img src="media/images/nvidia-tech.jpg" alt="NVIDIA TECH" class="main-image">
-                <h4 class="imageinfo">TESLA AUTOPILOT</h4>
-                <img src="media/images/Tesla-Autopilot.jpg" alt="TESLA AUTOPILOT" class="main-image">    
+            <h2>Де ми знаходимося:</h2>
+            <div class="mapouter">
+                <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Peremohy Ave, 37, Kyiv, 03056&amp;t=h&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
             </div>
         </main>
     </div>
