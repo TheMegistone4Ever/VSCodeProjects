@@ -138,13 +138,9 @@
         flex-direction: column;
     }
 
-    #main-footer > div {
-        width: 25%;
-    }
-
-    #top-sign, #footer-sign {
+    #main-footer > div, #top-sign, #footer-sign {
+        width: 50%;
         margin: auto;
-        width: auto;
     }
 }
 
@@ -177,20 +173,10 @@
 }
 
 .mapouter {
-    position: relative;
-    text-align: right;
-    width: 100%;
-    height: 25rem;
-    margin: 2%;
-}
-
-.gmap_canvas {
-    overflow: hidden;
-    background: none;
-    width: 100%;
-    height: 25rem;
+    height: 25em;
+    border: 4px solid #F96;
 }
 
 .gmap_iframe {
-    height: 25rem;
+    height: 100%;
 }
