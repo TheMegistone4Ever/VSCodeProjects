@@ -7,7 +7,7 @@
 
 body {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         'nav    header  header'
         'nav    main    aside'
         'footer footer  footer';
@@ -104,6 +104,7 @@ body {
     margin: auto;
     font-size: 1.5rem;
     color: #F96;
+    word-wrap: break-word;
 }
 
 .line {
@@ -115,15 +116,16 @@ body {
 @media (max-width: 1000px) {
     body {
         grid-template-areas:
-        'header'
-        'nav'
-        'main'
-        'aside'
-        'footer';
+            'header'
+            'nav'
+            'main'
+            'aside'
+            'footer';
         grid-template-columns: 1fr;
     }
 
-    #main-header, #main-center {
+    #main-header,
+    #main-center {
         grid-template-columns: 1fr;
     }
 
@@ -166,7 +168,7 @@ body {
     margin: 1rem;
 }
 
-.main-list > li {
+.main-list>li {
     margin-bottom: 1rem;
 }
 
