@@ -157,13 +157,6 @@ body {
     margin-top: 1.5rem;
 }
 
-.main-link {
-    line-height: 2em;
-    font-size: 1.8em;
-    color: black;
-    text-decoration: underline solid #F96 .3rem;
-}
-
 .main-list {
     margin: 1rem;
 }
