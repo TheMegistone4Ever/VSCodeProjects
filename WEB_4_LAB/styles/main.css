@@ -12,7 +12,7 @@ body {
         'main'
         'footer';
     grid-auto-rows: minmax(6rem, auto);
-    background: linear-gradient(#f1c50e 40%, #0d244b 40%) fixed;
+    background: linear-gradient(#f1c50e 40%, #0d244b 40%) no-repeat;
     height: 100%;
 }
 
