@@ -13,13 +13,17 @@ body {
         'footer';
     grid-auto-rows: minmax(6rem, auto);
     background: linear-gradient(#f1c50e 40%, #0d244b 40%) no-repeat;
-    height: 100%;
+    width: 100%;
 }
 
 main {
     display: grid;
-    justify-self: center;
+    justify-items: center;
     padding: 2rem;
+}
+
+.demo-block {
+    max-width: auto;
 }
 
 header,
@@ -110,10 +114,6 @@ footer {
 }
 
 @media (max-width: 1200px) {
-
-    main {
-        width: 100%;
-    }
 
     article,
     nav {
