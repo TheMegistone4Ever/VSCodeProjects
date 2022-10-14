@@ -111,7 +111,6 @@ footer {
 
 @media (max-width: 1500px) {
 
-
     article,
     nav {
         grid-template-columns: repeat(2, 1fr);
