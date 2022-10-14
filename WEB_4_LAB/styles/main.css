@@ -104,12 +104,13 @@ footer {
 }
 
 .footer-block {
-    width: 50%;
+    width: 30vw;
     text-align: center;
     color: #fff;
 }
 
 @media (max-width: 1500px) {
+
 
     article,
     nav {
@@ -118,7 +119,7 @@ footer {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
 
     article,
     nav {
