@@ -5,6 +5,8 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+
 body {
     display: grid;
     grid-template-areas:
@@ -13,7 +15,6 @@ body {
         'footer';
     grid-auto-rows: minmax(6rem, auto);
     background: linear-gradient(#f1c50e 40%, #0d244b 40%) no-repeat;
-    width: 100%;
 }
 
 main {
@@ -22,9 +23,7 @@ main {
     padding: 2rem;
 }
 
-.demo-block {
-    max-width: auto;
-}
+.demo-block {}
 
 header,
 article,
