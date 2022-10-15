@@ -1,0 +1,11 @@
+Model Information:
+* title:	(XB1101-05) Autumn Tree
+* source:	https://sketchfab.com/3d-models/xb1101-05-autumn-tree-ae706d5af757433c88a95aedc42a9016
+* author:	SamuelJamesBate (https://sketchfab.com/SamuelJamesBate)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "(XB1101-05) Autumn Tree" (https://sketchfab.com/3d-models/xb1101-05-autumn-tree-ae706d5af757433c88a95aedc42a9016) by SamuelJamesBate (https://sketchfab.com/SamuelJamesBate) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

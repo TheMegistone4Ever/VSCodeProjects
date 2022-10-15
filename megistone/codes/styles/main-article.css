@@ -1,0 +1,27 @@
+#main_article, .lead {
+	margin: 1em auto 1em auto;
+	padding: 0;
+}
+.main_art_container {
+	display: flex;
+	width: 100%;
+}
+.main_art_textarea {
+	background: #DF69352f;
+	min-height: 250px;
+}
+.main_art_text {
+	color: #6b3102;
+	font-size: 1.7em;
+}
+.main_art_svg, .main_art_textarea {
+	padding: 8px;
+	width: 50%;
+}
+.lead {
+	background: #D763132f;
+	font-size: 2.2em;
+	color: #6b3102;
+	font-weight: bold;
+	padding: 12px;
+}

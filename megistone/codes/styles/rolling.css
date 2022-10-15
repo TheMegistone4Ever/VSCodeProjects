@@ -1,0 +1,40 @@
+.bgimg-2, .bgimg-3 {
+	position: relative;
+	opacity: 0.83;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 400px;
+}
+.caption {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color: #000000;
+}
+.cnts-arle-plx {
+	font-size: 80px;
+	color: #f7f7f7;
+	font-weight: bold;
+	letter-spacing: 12px;
+}
+.lead-text-paralax {
+	font-size: 25px;
+	color: #261B12;
+	text-align: justify;
+	padding: 50px 80px;
+}
+h3#lead-article {
+	letter-spacing: 8px;
+	text-transform: uppercase;
+	font: 40px "Lato", sans-serif;
+}
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+	.bgimg-2, .bgimg-3 {
+		background-attachment: scroll;
+	}
+}

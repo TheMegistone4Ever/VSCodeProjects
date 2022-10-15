@@ -1,0 +1,35 @@
+#head_article {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 6.3%;
+	height: auto;
+}
+#head_menu {
+	text-align: center;
+	margin-top: 3px;
+}
+#head_help_list {
+    margin: 15px auto 15px auto;
+	font-size: 1.2em;
+}
+.path:hover {
+	color: white;
+}
+.path, .divider, #time_head {
+	color: #D8942A;
+	text-decoration: none;
+}
+.path, .divider {
+	margin-right: 0.5em;
+}
+#time_control, #time {
+	color: #e7e7e7;
+}
+#time {
+	font-size: 3.5em;
+}
+.time_info, #time_head {
+	font-size: 1.6em;
+	margin-right: 1.3em;
+}

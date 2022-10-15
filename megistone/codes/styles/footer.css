@@ -1,0 +1,13 @@
+footer {
+	margin: 20px 0;
+}
+footer hr {
+	margin: 0 auto 10px;
+}
+footer p {
+	text-align: center;
+	color: #291300;
+	font-weight: lighter;
+	font-size: 20px;
+	line-height: 20px;
+}

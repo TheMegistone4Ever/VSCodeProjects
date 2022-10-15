@@ -1,0 +1,70 @@
+#preview, .trl-photo-block {
+	padding: 1vw;
+}
+#lead-text, .quote-text, .trl-photo-block, #trailer-photos {
+	font-weight: lighter;
+	text-align: center;
+	color: #8A8A8A;
+}
+.quote-text, .text-part-trl {
+	font-size: 2.6vw;
+}
+.quote-text {
+	font-style: italic;
+	margin: 0 2.963vw 0 2.963vw;
+}
+#lead-text {
+	font-size: 12.593vw;
+	text-transform: uppercase;
+	letter-spacing: 3.3vw;
+}
+.trl-photo-block {
+	margin: 5.2vw 0 1.2vw 0;
+	margin-left: 0;
+	height: 900px;
+	position: relative;
+	width: 50%;
+}
+.preview-part {
+	background: #ffffff0b;
+	padding: 1.852vw;
+	display: flex;
+	margin: 8% auto 8% auto;
+	display: flex;
+	flex-direction: row;
+}
+.text-part-trl:not(.normal-text) {
+	float: right;
+	width: 50%;
+}
+.text-part-trl h1 {
+	font-size: 4.44vw;
+	padding-bottom: 30px;
+	border-bottom: 2px solid;
+	margin-bottom: 0;
+}
+.text-part-trl {
+	color: #ECECEC;
+	font-weight: lighter;
+	margin: 30px;
+}
+#photo-1, #photo-2, #photo-3 {
+	width: 20.74vw;
+	height: auto;
+	position: absolute;
+	border: .44vw solid #ECECEC;
+}
+#photo-1 {
+	z-index: 1;
+	margin-top: 1.481vw;
+}
+#photo-2 {
+	z-index: 2;
+	margin-top: 34.074vw;
+	margin-left: .222vw;
+}
+#photo-3 {
+	z-index: 3;
+	margin-top: 15.556vw;
+	margin-left: 10.593vw;
+}
