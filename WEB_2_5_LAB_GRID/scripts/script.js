@@ -42,7 +42,7 @@ function getRhombusArea(outId, inId1, inId2) {
             document.getElementById(inId2).style.color = "#f00";
             alert("Друга діагональ повинна бути додатною!");
         } else {
-            document.getElementById(inId1).style.color = "#000";
+            document.getElementById(inId2).style.color = "#000";
             elem = document.createElement("H3");
             elem.innerHTML = "Площа ромбу (d1 = " + elem1.value + ", d2 = " + elem2.value + "): " + (elem1.value * elem2.value / 2);
             document.getElementById(outId).append(elem);
@@ -92,3 +92,18 @@ function borderChange(id, isNone) {
 }
 
 // task 5
+function increaseImages(countId) {
+    fsign = document.getElementById("footer-sign");
+
+    document.getElementById(countId).value++;
+
+}
+
+function addImages(navId, countId) {
+    elem = document.getElementById(navId);
+    for (let i = 0; i < document.getElementById(countId).value; ++i) {
+        img = document.createElement("img");
+        img.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/OttoWeiningerspring1903.jpg/274px-OttoWeiningerspring1903.jpg";
+        elem.append(img);
+    }
+}
