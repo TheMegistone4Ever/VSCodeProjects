@@ -20,18 +20,24 @@ body {
     background-color: #666;
     color: #CCC;
     font-size: 1rem;
-    padding: 0.5rem;
     width: 20rem;
     word-wrap: normal;
-    margin: 1rem;
+    cursor: pointer;
+    padding: .1rem;
+    min-height: 3rem;
+    margin: .3rem;
 }
 
-.minmax {
-    border: 6px solid #F96;
-    background-color: #666;
+.main-input,
+#first-diag,
+#second-diag {
+    border: 6px solid #666;
+    background-color: #999;
     color: #CCC;
-    width: 4.9rem;
-    padding: 0.5rem;
+    width: 4rem;
+    padding: .1rem;
+    min-height: 3rem;
+    margin: .3rem;
 }
 
 .analise {

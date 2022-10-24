@@ -29,32 +29,45 @@
             <p>Є питання? - звертайтеся!</p>
         </section>
         <main id="main">
-            <h2>1) Поміняйте місцями тексти, позначені «2» та «6»:</h2>
-            <button onclick="swapText('main-header', 'main-footer')" class="main-button">Swap header and footer (2 => 6)
-                text</button>
-
-            <h2>2) Напишіть функцію, яка обчислює площу ромба, беручи необхідні значення із відповідних змінних у
-                скрипті, та виводить отриманий результат в кінці контенту в блоці «5» (цей блок):</h2>
-            <input type="number" placeholder="Перша діагональ" id="first-diag">
-            <input type="number" placeholder="Друга діагональ" id="second-diag">
-            <button onclick="getRhombusArea('main', 'first-diag', 'second-diag')" class="main-button">Rhombus
-                Area</button>
-
-            <h2>3) Напишіть скрипт, який визначає мінімальне і максимальне числа із 10 значень, беручи необхідні
-                значення із відповідної форми в блоці «5», а отриманий результат виводить за допомогою діалогового вікна
-                та зберігає в cookies:</h2>
-            <input class="minmax" type="number">
-            <input class="minmax" type="number">
-            <input class="minmax" type="number">
-            <input class="minmax" type="number">
-            <input class="minmax" type="number">
-            <input class="minmax" type="number">
-            <input class="minmax" type="number">
-            <input class="minmax" type="number">
-            <input class="minmax" type="number">
-            <input class="minmax" type="number">
-
-
+            <ol class="main-list">
+                <li>
+                    <h3>Поміняйте місцями тексти, позначені «2» та «6»:</h3>
+                    <button onclick="swapText('main-header', 'main-footer')" class="main-button">Swap header and footer
+                        (2 => 6)
+                        text</button>
+                </li>
+                <li>
+                    <h3>Напишіть функцію, яка обчислює площу ромба, беручи необхідні значення із відповідних змінних у
+                        скрипті, та виводить отриманий результат в кінці контенту в блоці «5» (цей блок):</h3>
+                    <input value="0" type="number" placeholder="Перша діагональ" id="first-diag">
+                    <input value="0" type="number" placeholder="Друга діагональ" id="second-diag">
+                    <button onclick="getRhombusArea('main', 'first-diag', 'second-diag')" class="main-button">Rhombus
+                        Area</button>
+                </li>
+                <li>
+                    <h3>Напишіть скрипт, який визначає мінімальне та максимальне числа із 10 значень, беручи необхідні
+                        значення із відповідної форми в блоці «5», а отриманий результат виводить за допомогою
+                        діалогового вікна
+                        та зберігає в cookies:</h3>
+                    <input class="minmax main-input" type="number" value="0">
+                    <input class="minmax main-input" type="number" value="0">
+                    <input class="minmax main-input" type="number" value="0">
+                    <input class="minmax main-input" type="number" value="0">
+                    <input class="minmax main-input" type="number" value="0">
+                    <input class="minmax main-input" type="number" value="0">
+                    <input class="minmax main-input" type="number" value="0">
+                    <input class="minmax main-input" type="number" value="0">
+                    <input class="minmax main-input" type="number" value="0">
+                    <input class="minmax main-input" type="number" value="0">
+                    <button onclick="minmax('minmax')" class="main-button">Get min and max value</button>
+                </li>
+                <li>
+                    <h3>Напишіть скрипт, який при настанні події focus змінює колір рамки усіх номерних блоків (1..6) на
+                        вказаний користувачем та зберігає відповідне значення кольору в localStorage браузера</h3>
+                    <button onclick="loadColorInLocalStorage()" class="main-button">Load color</button>
+                    <input type="color" class="main-color main-input">
+                </li>
+            </ol>
         </main>
     </div>
     <aside id="main-aside">
