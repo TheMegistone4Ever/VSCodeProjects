@@ -26,6 +26,14 @@ body {
     margin: 1rem;
 }
 
+.minmax {
+    border: 6px solid #F96;
+    background-color: #666;
+    color: #CCC;
+    width: 4.9rem;
+    padding: 0.5rem;
+}
+
 .analise {
     display: grid;
     background-color: #666;
@@ -135,23 +143,14 @@ body {
         grid-template-columns: 1fr;
     }
 
-    #main-header,
+    .analise,
     #main-center {
-        grid-template-columns: 1fr;
+        display: block;
     }
 
-    #main-footer {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    #main-footer div {
+    .analise div {
+        margin: auto;
         width: 15rem;
-    }
-}
-
-@media (max-width: 600px) {
-    #main-footer {
-        grid-template-columns: 1fr;
     }
 }
 

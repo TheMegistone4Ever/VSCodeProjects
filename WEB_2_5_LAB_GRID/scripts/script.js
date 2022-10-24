@@ -8,11 +8,11 @@ function swapText(id1, id2) {
     let arr2 = Array.from(elem2.children);
 
     arr2.forEach(el => {
-        if (el.tagName != "h3") elem1.append(el);
+        if (el.tagName != "H3") elem1.append(el);
     });
 
     arr1.forEach(el => {
-        if (el.tagName != "h3") elem2.append(el);
+        if (el.tagName != "H3") elem2.append(el);
     });
 
     if (swapclicks++ % 2 == 0) {
@@ -39,7 +39,7 @@ function getRhombusArea(outId, inId1, inId2) {
             document.getElementById(inId2).style.color = "#f00";
             alert("Друга діагональ повинна бути додатною!");
         } else {
-            elem = document.createElement("h3");
+            elem = document.createElement("H3");
             elem.innerHTML = "Площа ромбу (d1 = " + elem1.value + ", d2 = " + elem2.value + "): " + (elem1.value * elem2.value / 2);
             document.getElementById(outId).append(elem);
         }
