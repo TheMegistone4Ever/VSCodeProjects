@@ -1,3 +1,4 @@
+// task 1
 var swapclicks = 1;
 
 function swapText(id1, id2) {
@@ -26,6 +27,8 @@ function swapText(id1, id2) {
     elem1.append(arr1.pop());
 }
 
+
+// task 2
 function getRhombusArea(outId, inId1, inId2) {
     elem1 = document.getElementById(inId1);
     elem2 = document.getElementById(inId2);
@@ -47,6 +50,8 @@ function getRhombusArea(outId, inId1, inId2) {
     }
 }
 
+
+// task 3
 window.addEventListener('load', (event) => {
     if (document.cookie != "max-element=; min-element=") {
         if (confirm("cookies: " + document.cookie + "\nClear cookies?")) {
@@ -74,6 +79,8 @@ function minmax(classname) {
     alert("min-element=" + min + ";\nmax element=" + max + ";");
 }
 
+
+// task 4
 function loadColorInLocalStorage(id) {
     localStorage.setItem("border-color", document.getElementById(id).value);
 }
@@ -83,3 +90,5 @@ function borderChange(id, isNone) {
         document.getElementById(id).style.border = "4px solid " + localStorage.getItem("border-color");
     else document.getElementById(id).style.border = "none";
 }
+
+// task 5
