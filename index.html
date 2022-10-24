@@ -1,18 +1,208 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weblabs</title>
+    <title>Weblab</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
+
+
+        body {
+            display: grid;
+            grid-template-areas:
+                'header'
+                'main'
+                'footer';
+            grid-auto-rows: minmax(6rem, auto);
+            background: linear-gradient(#f1c50e 40%, #0d244b 40%) no-repeat;
+        }
+
+        main {
+            display: grid;
+            justify-items: center;
+            padding: 2rem;
+        }
+
+        header,
+        article,
+        nav,
+        footer {
+            display: grid;
+            align-items: center;
+            justify-items: center;
+            padding: 0.5rem;
+        }
+
+        header {
+            grid-auto-flow: column;
+            justify-content: space-around;
+            background-color: #fff;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        article {
+            grid-template-columns: repeat(4, 1fr);
+            height: 28rem;
+        }
+
+        article img {
+            width: 16rem;
+            box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+        }
+
+        .bottom-img {
+            margin-top: auto;
+        }
+
+        .top-img {
+            margin-bottom: auto;
+        }
+
+        article,
+        nav {
+            gap: 1.5rem;
+        }
+
+        nav {
+            grid-template-columns: repeat(4, 1fr);
+            margin-top: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .nav-block {
+            display: grid;
+            width: 16rem;
+            background-color: #fff;
+            border-radius: 1.3rem;
+            justify-items: center;
+            text-align: center;
+            min-height: 20rem;
+            padding: 1rem;
+            color: #444;
+        }
+
+        .nav-block a {
+            text-underline-position: under;
+            font-weight: lighter;
+        }
+
+        .nav-block img {
+            height: 90px;
+        }
+
+        .nav-block h3 {
+            letter-spacing: 2px;
+        }
+
+        footer {
+            justify-content: space-around;
+            background-color: #333;
+            grid-auto-flow: column;
+        }
+
+        .footer-block {
+            width: 50%;
+            text-align: center;
+            color: #fff;
+        }
+
+        @media (max-width: 1200px) {
+
+            article,
+            nav {
+                grid-template-columns: repeat(2, 1fr);
+                height: auto;
+            }
+        }
+
+        @media (max-width: 650px) {
+
+            article,
+            nav {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .nav-block,
+            article img {
+                width: 19rem;
+            }
+
+            .nav-block {
+                min-height: 19rem;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <p>FL:AFSHKKL</p>
+    <header>
+        <div id="logo"><a href="index.html"><img
+                    src="https://img.icons8.com/ios-filled/128/000000/amazon-alexa-logo.png" alt="LOGO"></a></div>
+        <div></div>
+        <div id="menu"><a href="index.html"><img src="https://img.icons8.com/ios-filled/128/1A1A1A/menu-rounded.png"
+                    alt="MENU BUTTON"></a></div>
+    </header>
+    <main>
+        <div class="demo-block">
+            <article>
+                <div class="top-img"><img src="./media/notebook-girl.jpg" alt="NOTEBOOK GIRL"></div>
+                <div class="bottom-img"><img src="./media/book-girl.jpg" alt="BOOK GIRL"></div>
+                <div class="top-img"><img src="./media/looking-girls.jpg" alt="LOOKING GIRLS"></div>
+                <div class="bottom-img"><img src="./media/looking-girl.jpg" alt="LOOKING GIRL"></div>
+            </article>
+            <nav>
+                <div class="nav-block">
+                    <img src="https://img.icons8.com/ios-filled/128/FAB005/innovation.png" alt="HOW WE TEACH">
+                    <h3>HOW WE TEACH</h3>
+                    <em>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus at commodi odit autem
+                        provident
+                        non.<br></em>
+                    <a href="">MORE</a>
+                </div>
+
+                <div class="nav-block">
+                    <img src="https://img.icons8.com/glyph-neue/128/FAB005/medal2.png" alt="RESULTS">
+                    <h3>RESULTS</h3>
+                    <em>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum magnam excepturi voluptates
+                        eius suscipit?<br></em>
+                    <a href="">MORE</a>
+                </div>
+
+                <div class="nav-block">
+                    <img src="https://img.icons8.com/ios-filled/128/FAB005/flying-motarboard.png" alt="TOP COURSES">
+                    <h3>TOP COURSES</h3>
+                    <em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam modi quam sit. Quas, aliquam
+                        ab.<br></em>
+                    <a href="">MORE</a>
+                </div>
+
+                <div class="nav-block">
+                    <img src="https://img.icons8.com/ios-filled/128/FAB005/messaging-.png" alt="SUPPORT">
+                    <h3>SUPPORT</h3>
+                    <em>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae minima labore quis quaerat. Eius,
+                        culpa?<br></em>
+                    <a href="">MORE</a>
+                </div>
+            </nav>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-block">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis illo ipsa soluta omnis.</p>
+        </div>
+    </footer>
 </body>
 
 </html>
