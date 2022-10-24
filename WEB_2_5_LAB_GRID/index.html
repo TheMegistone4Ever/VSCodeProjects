@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="ua">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weblab</title>
     <link rel="stylesheet" href="./styles/grid_layout.css">
+    <script src="./scripts/script.js"></script>
 </head>
+
 <body>
-    <header id="main-header">
+    <header id="main-header" class="analise">
         <h1>Сучасні технології розробки штучного інтелекту</h1>
         <h3 class="sign">10011011001100</h3>
     </header>
     <nav id="main-nav">
         <h1>Меню навігації</h1>
         <hr class="line">
-        <a href="index.html">Головна<br></a>
+        <a href="index.html" style="text-decoration: underline solid #F96 .3rem;">Головна<br></a>
         <a href="lists.html">Списки робіт<br></a>
         <a href="images.html">Зображення<br></a>
-        <a href="links.html" style="text-decoration: underline solid #F96 .3rem;">Посилання<br></a>
+        <a href="links.html">Посилання<br></a>
         <a href="maps.html">Де ми на карті<br></a>
     </nav>
     <div id="main-center">
@@ -26,11 +29,16 @@
             <p>Є питання? - звертайтеся!</p>
         </section>
         <main id="main">
-            <h2>Наші посилання:</h2>
-            <a href="https://www.instagram.com/megistonenew/" class="main-link" target="_blank">Instagram</a><br>
-            <a href="https://github.com/TheMegistone4Ever" class="main-link" target="_blank">Github</a><br>
-            <a href="https://t.me/topskiypavel" class="main-link" target="_blank">Telegram</a><br>
-            <a href="mailto:zeusmobilenick@gmail.com" class="main-link" target="_blank">EMail</a><br>
+            <h2>1) Поміняйте місцями тексти, позначені «2» та «6»:</h2>
+            <button onclick="swapText('main-header', 'main-footer')" class="main-button">Swap header and footer (2 => 6)
+                text</button>
+
+            <h2>2) Напишіть функцію, яка обчислює площу ромба, беручи необхідні значення із відповідних змінних у
+                скрипті, та виводить отриманий результат в кінці контенту в блоці «5» (цей блок):</h2>
+            <input type="number" placeholder="Перша діагональ" id="first-diag">
+            <input type="number" placeholder="Друга діагональ" id="second-diag">
+            <button onclick="getRhombusArea('main', 'first-diag', 'second-diag')" class="main-button">Rhombus
+                Area</button>
         </main>
     </div>
     <aside id="main-aside">
@@ -74,7 +82,7 @@
             <dd>Atque irrisores!</dd>
         </p>
     </aside>
-    <footer id="main-footer">
+    <footer id="main-footer" class="analise">
         <h3 class="sign">10000011001001</h3>
         <div>
             <h4>Контакти</h4>
@@ -97,4 +105,5 @@
         </div>
     </footer>
 </body>
+
 </html>
