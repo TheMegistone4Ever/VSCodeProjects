@@ -74,6 +74,12 @@ function minmax(classname) {
     alert("min-element=" + min + ";\nmax element=" + max + ";");
 }
 
-function loadColorInLocalStorage() {
+function loadColorInLocalStorage(id) {
+    localStorage.setItem("border-color", document.getElementById(id).value);
+}
 
+function borderChange(id, isNone) {
+    if (isNone !== 0)
+        document.getElementById(id).style.border = "4px solid " + localStorage.getItem("border-color");
+    else document.getElementById(id).style.border = "none";
 }

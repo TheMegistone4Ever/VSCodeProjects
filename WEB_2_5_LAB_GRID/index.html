@@ -11,11 +11,12 @@
 </head>
 
 <body>
-    <header id="main-header" class="analise">
+    <header id="main-header" class="analise" onmouseover="borderChange(this.id, 1)"
+        onmouseout="borderChange(this.id, 0)">
         <h1>Сучасні технології розробки штучного інтелекту</h1>
         <h3 class="sign">10011011001100</h3>
     </header>
-    <nav id="main-nav">
+    <nav id="main-nav" onmouseover="borderChange(this.id, 1)" onmouseout="borderChange(this.id, 0)">
         <h1>Меню навігації</h1>
         <hr class="line">
         <a href="index.html" style="text-decoration: underline solid #F96 .3rem;">Головна<br></a>
@@ -25,10 +26,13 @@
         <a href="maps.html">Де ми на карті<br></a>
     </nav>
     <div id="main-center">
-        <section id="top-main-section">
-            <p>Є питання? - звертайтеся!</p>
+        <section id="top-main-section" onmouseover="borderChange(this.id, 1)" onmouseout="borderChange(this.id, 0)">
+            <div
+                style="border-top: 6px solid #F96; border-bottom: 6px solid #F96; height: inherit; min-height: 4.5rem;">
+                <p>Є питання? - звертайтеся!</p>
+            </div>
         </section>
-        <main id="main">
+        <main id="main" onmouseover="borderChange(this.id, 1)" onmouseout="borderChange(this.id, 0)">
             <ol class="main-list">
                 <li>
                     <h3>Поміняйте місцями тексти, позначені «2» та «6»:</h3>
@@ -64,13 +68,13 @@
                 <li>
                     <h3>Напишіть скрипт, який при настанні події focus змінює колір рамки усіх номерних блоків (1..6) на
                         вказаний користувачем та зберігає відповідне значення кольору в localStorage браузера</h3>
-                    <button onclick="loadColorInLocalStorage()" class="main-button">Load color</button>
-                    <input type="color" class="main-color main-input">
+                    <button onclick="loadColorInLocalStorage('main-color')" class="main-button">Load color</button>
+                    <input type="color" id="main-color" class="main-input">
                 </li>
             </ol>
         </main>
     </div>
-    <aside id="main-aside">
+    <aside id="main-aside" onmouseover="borderChange(this.id, 1)" onmouseout="borderChange(this.id, 0)">
         <h1>Gaudeamus</h1>
         <hr class="line">
         <p>
@@ -111,7 +115,8 @@
             <dd>Atque irrisores!</dd>
         </p>
     </aside>
-    <footer id="main-footer" class="analise">
+    <footer id="main-footer" class="analise" onmouseover="borderChange(this.id, 1)"
+        onmouseout="borderChange(this.id, 0)">
         <h3 class="sign">10000011001001</h3>
         <div>
             <h4>Контакти</h4>
