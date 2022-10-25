@@ -93,17 +93,18 @@ function borderChange(id, isNone) {
 
 // task 5
 function increaseImages(countId) {
-    fsign = document.getElementById("footer-sign");
-
+    fsign = document.getElementById("footer-sign")
     document.getElementById(countId).value++;
-
 }
 
 function addImages(navId, countId) {
-    elem = document.getElementById(navId);
-    for (let i = 0; i < document.getElementById(countId).value; ++i) {
+    let elem = document.getElementById(navId);
+    for (let i = 0, img; i < document.getElementById(countId).value; ++i) {
         img = document.createElement("img");
         img.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/OttoWeiningerspring1903.jpg/274px-OttoWeiningerspring1903.jpg";
         elem.append(img);
     }
 }
+
+selectElem = document.getElementById("footer-sign");
+selectElem.addEventListener("onselect", addImages('main-nav', 'images-count'));
