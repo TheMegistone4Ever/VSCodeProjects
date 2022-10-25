@@ -73,7 +73,7 @@
         let max = elements[0].value;
         for (let el = 1; el < elements.length; ++el) {
             if (elements[el].value < min) min = elements[el].value;
-            else if (elements[el].value > max) max = elements[el].value;
+            if (elements[el].value > max) max = elements[el].value;
         }
 
         document.cookie = "min-element= " + min + ";";
