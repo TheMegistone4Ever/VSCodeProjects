@@ -92,6 +92,8 @@ function borderChange(id, isNone) {
 }
 
 // task 5
+isTttt = true;
+
 function increaseImages(countId) {
     fsign = document.getElementById("footer-sign")
     document.getElementById(countId).value++;
@@ -104,7 +106,38 @@ function addImages(navId, countId) {
         img.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/OttoWeiningerspring1903.jpg/274px-OttoWeiningerspring1903.jpg";
         elem.append(img);
     }
-}
+} // addImages('main-nav', 'images-count')
 
-selectElem = document.getElementById("footer-sign");
-selectElem.addEventListener("onselect", addImages('main-nav', 'images-count'));
+
+/* 
+                    <h3>Напишіть скрипт додавання зображень в блок «1» (меню навігації):</h3>
+                    <button onclick="increaseImages('images-count')" class="main-button">Add images</button>
+                    <input class="main-input" id="images-count" type="number" value="0" disabled>
+         NONEEEE    <button onclick="addImages('main-nav', 'images-count')" class="main-button">Save images</button>
+*/
+function createController(createId) {
+    if (isTttt) {
+        let createElem = document.createElement("DIV");
+
+        let head3 = document.createElement("H3");
+        head3.textContent = "Напишіть скрипт додавання зображень в блок «1» (меню навігації):";
+        createElem.append(head3);
+
+        let button1 = document.createElement("BUTTON");
+        button1.textContent = "Add images";
+        button1.className = "main-button";
+        button1.onclick = increaseImages('images-count');
+        createElem.append(button1);
+
+        let input = document.createElement("INPUT");
+        input.type = "number";
+        input.className = "main-input";
+        input.id = "images-count";
+        input.value = "0";
+        input.disabled = true;
+        createElem.append(input);
+
+        document.getElementById(createId).append(createElem);
+        isTttt = false;
+    }
+}

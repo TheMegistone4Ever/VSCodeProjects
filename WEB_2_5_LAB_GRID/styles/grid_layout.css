@@ -12,6 +12,7 @@ body {
         'nav    main    aside'
         'footer footer  footer';
     grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: minmax(10rem, auto) auto auto;
 }
 
 .main-button {
@@ -93,6 +94,7 @@ body {
     display: grid;
     grid-area: main;
     grid-template-rows: minmax(4.5rem, auto) 1fr;
+    align-items: flex-start;
 }
 
 #top-main-section {
@@ -131,6 +133,9 @@ body {
     font-size: 1.5rem;
     color: #F96;
     word-wrap: break-word;
+    background: none;
+    height: 2.5rem;
+    resize: none;
 }
 
 .line {
