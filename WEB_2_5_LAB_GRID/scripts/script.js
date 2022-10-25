@@ -9,19 +9,19 @@ function swapText(id1, id2) {
     let arr2 = Array.from(elem2.children);
 
     arr2.forEach(el => {
-        if (el.tagName != "H3") elem1.append(el);
+        if (el.tagName != "TEXTAREA") elem1.append(el);
     });
 
     arr1.forEach(el => {
-        if (el.tagName != "H3") elem2.append(el);
+        if (el.tagName != "TEXTAREA") elem2.append(el);
     });
 
     if (++swapclicks % 2 == 0) {
         elem1.style.gridTemplateColumns = "1fr 1fr 1fr 2fr";
         elem2.style.gridTemplateColumns = "1fr 2fr";
     } else {
-        elem2.style.gridTemplateColumns = "2fr 1fr 1fr 1fr";
         elem1.style.gridTemplateColumns = "2fr 1fr";
+        elem2.style.gridTemplateColumns = "2fr 1fr 1fr 1fr";
     }
 
     elem1.append(arr1.pop());
@@ -94,19 +94,6 @@ function borderChange(id, isNone) {
 // task 5
 isTttt = true;
 
-function increaseImages(countId, navId) {
-    fsign = document.getElementById("footer-sign")
-    document.getElementById(countId).value++;
-    img = document.createElement("img");
-    img.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/OttoWeiningerspring1903.jpg/274px-OttoWeiningerspring1903.jpg";
-    document.getElementById(navId).append(img);
-}
-
-function saveImagesToLS(countId) {
-    let count = document.getElementById(countId);
-
-}
-
 // addImages('main-nav', 'images-count')
 /* 
                     <h3>Напишіть скрипт додавання зображень в блок «1» (меню навігації):</h3>
@@ -117,29 +104,69 @@ function saveImagesToLS(countId) {
          sak l;sfal;;asf;' lasf;kf
          dasasdklk;l;mfja aslfsal;fkl afkjafaasfas fllasfl;afl;asflk'a asl;fla kskadlk;s;adlkf laslf l;asfkfal;sklfawfkwpmsfd; smlkfsd
 */
-function createController(createId) {
-    if (isTttt) {
-        let createElem = document.createElement("DIV");
+function createController(createId, navId, imgSrc) {
+    if (!isTttt) return;
+    let createElem = document.createElement("DIV");
 
-        let head3 = document.createElement("H3");
-        head3.textContent = "Напишіть скрипт додавання зображень в блок «1» (меню навігації):";
-        createElem.append(head3);
+    // header
+    let head3 = document.createElement("H3");
+    head3.textContent = "Напишіть скрипт додавання зображень в блок «1» (меню навігації):";
+    createElem.append(head3);
 
-        let button1 = document.createElement("BUTTON");
-        button1.textContent = "Add image";
-        button1.className = "main-button";
-        button1.onclick = increaseImages('images-count', 'main-nav');
-        createElem.append(button1);
+    // counter
+    let input = document.createElement("INPUT");
+    input.type = "number";
+    input.className = "main-input";
+    input.id = "images-count";
+    input.value = 0;
+    input.disabled = true;
+    createElem.append(input);
 
-        let input = document.createElement("INPUT");
-        input.type = "number";
-        input.className = "main-input";
-        input.id = "images-count";
-        input.value = "0";
-        input.disabled = true;
-        createElem.append(input);
+    // add images to main-nav
+    let button1 = document.createElement("BUTTON");
+    button1.textContent = "Add image";
+    button1.className = "main-button";
+    button1.onclick = (event) => {
+        input.value++;
+        img = document.createElement("img");
+        img.src = imgSrc;
+        document.getElementById(navId).append(img);
+    };
+    createElem.append(button1);
 
-        document.getElementById(createId).append(createElem);
-        isTttt = false;
-    }
+    // save images from main-nav to localStorage
+    let button2 = document.createElement("BUTTON");
+    button2.textContent = "Save images to LS";
+    button2.className = "main-button";
+    button2.onclick = (event) => {
+        saveImagesToLSAndAddTo4("images-count", "main-aside", imgSrc);
+    };
+    createElem.append(button2);
+
+    // delete images from localStorage and from main-nav
+    let button3 = document.createElement("BUTTON");
+    button3.textContent = "Delete images from LS";
+    button3.className = "main-button";
+    button3.onclick = (event) => {
+        deleteImagesFromLSAndClearInNav(imgSrc, navId);
+    };
+    createElem.append(button3);
+
+    document.getElementById(createId).append(createElem);
+    isTttt = false;
+}
+
+function saveImagesToLSAndAddTo4(countId, asideId, imgSrc) {
+    localStorage.setItem(imgSrc, document.getElementById(countId).value);
+    img = document.createElement("img");
+    img.src = imgSrc;
+    document.getElementById(asideId).append(img);
+}
+
+function deleteImagesFromLSAndClearInNav(imgSrc, navId) {
+    localStorage.removeItem(imgSrc);
+    Array.from(document.getElementById(navId).children).forEach(el => {
+        if (el.tagName == "IMG")
+            if (el.src == imgSrc) el.remove();
+    });
 }

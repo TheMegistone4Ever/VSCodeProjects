@@ -70,12 +70,13 @@ body {
 #main-footer {
     grid-area: footer;
     grid-template-columns: 2fr 1fr 1fr 1fr;
+    align-items: center;
 }
 
 #main-header {
     grid-area: header;
     grid-template-columns: 2fr 1fr;
-    height: max-content;
+    align-items: center;
 }
 
 #main-nav {
