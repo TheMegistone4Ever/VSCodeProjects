@@ -92,20 +92,9 @@ function borderChange(id, isNone) {
 }
 
 // task 5
-isTttt = true;
-
-// addImages('main-nav', 'images-count')
-/* 
-                    <h3>Напишіть скрипт додавання зображень в блок «1» (меню навігації):</h3>
-                    <button onclick="increaseImages('images-count')" class="main-button">Add images</button>
-                    <input class="main-input" id="images-count" type="number" value="0" disabled>
-         NONEEEE    <button onclick="addImages('main-nav', 'images-count')" class="main-button">Save images</button>
-         4sl;akfls;a l;sfa;l afs;l salf;m sfal;afs
-         sak l;sfal;;asf;' lasf;kf
-         dasasdklk;l;mfja aslfsal;fkl afkjafaasfas fllasfl;afl;asflk'a asl;fla kskadlk;s;adlkf laslf l;asfkfal;sklfawfkwpmsfd; smlkfsd
-*/
+alreadyCreated = true;
 function createController(createId, navId, imgSrc) {
-    if (!isTttt) return;
+    if (!alreadyCreated) return;
     let createElem = document.createElement("DIV");
 
     // header
@@ -128,7 +117,7 @@ function createController(createId, navId, imgSrc) {
     button1.className = "main-button";
     button1.onclick = (event) => {
         input.value++;
-        img = document.createElement("img");
+        img = document.createElement("IMG");
         img.src = imgSrc;
         document.getElementById(navId).append(img);
     };
@@ -153,12 +142,12 @@ function createController(createId, navId, imgSrc) {
     createElem.append(button3);
 
     document.getElementById(createId).append(createElem);
-    isTttt = false;
+    alreadyCreated = false;
 }
 
 function saveImagesToLSAndAddTo4(countId, asideId, imgSrc) {
     localStorage.setItem(imgSrc, document.getElementById(countId).value);
-    img = document.createElement("img");
+    img = document.createElement("IMG");
     img.src = imgSrc;
     document.getElementById(asideId).append(img);
 }

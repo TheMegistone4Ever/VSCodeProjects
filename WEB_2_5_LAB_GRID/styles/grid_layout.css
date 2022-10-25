@@ -60,23 +60,28 @@ body {
 .analise h1 {
     color: #CCC;
     font-size: 3rem;
+    text-align: left;
 }
 
 .analise div {
     padding: 2%;
     color: #CCC;
+    text-align: left;
+}
+
+#main-footer,
+#main-header {
+    text-align: center;
 }
 
 #main-footer {
     grid-area: footer;
     grid-template-columns: 2fr 1fr 1fr 1fr;
-    align-items: center;
 }
 
 #main-header {
     grid-area: header;
     grid-template-columns: 2fr 1fr;
-    align-items: center;
 }
 
 #main-nav {
@@ -95,7 +100,6 @@ body {
     display: grid;
     grid-area: main;
     grid-template-rows: minmax(4.5rem, auto) 1fr;
-    align-items: flex-start;
 }
 
 #top-main-section {
@@ -110,6 +114,8 @@ body {
     display: grid;
     padding: 2rem;
     font-size: 1.2rem;
+    height: 100%;
+    align-content: start;
 }
 
 #main p {
