@@ -94,26 +94,28 @@ function borderChange(id, isNone) {
 // task 5
 isTttt = true;
 
-function increaseImages(countId) {
+function increaseImages(countId, navId) {
     fsign = document.getElementById("footer-sign")
     document.getElementById(countId).value++;
+    img = document.createElement("img");
+    img.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/OttoWeiningerspring1903.jpg/274px-OttoWeiningerspring1903.jpg";
+    document.getElementById(navId).append(img);
 }
 
-function addImages(navId, countId) {
-    let elem = document.getElementById(navId);
-    for (let i = 0, img; i < document.getElementById(countId).value; ++i) {
-        img = document.createElement("img");
-        img.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/OttoWeiningerspring1903.jpg/274px-OttoWeiningerspring1903.jpg";
-        elem.append(img);
-    }
-} // addImages('main-nav', 'images-count')
+function saveImagesToLS(countId) {
+    let count = document.getElementById(countId);
 
+}
 
+// addImages('main-nav', 'images-count')
 /* 
                     <h3>Напишіть скрипт додавання зображень в блок «1» (меню навігації):</h3>
                     <button onclick="increaseImages('images-count')" class="main-button">Add images</button>
                     <input class="main-input" id="images-count" type="number" value="0" disabled>
          NONEEEE    <button onclick="addImages('main-nav', 'images-count')" class="main-button">Save images</button>
+         4sl;akfls;a l;sfa;l afs;l salf;m sfal;afs
+         sak l;sfal;;asf;' lasf;kf
+         dasasdklk;l;mfja aslfsal;fkl afkjafaasfas fllasfl;afl;asflk'a asl;fla kskadlk;s;adlkf laslf l;asfkfal;sklfawfkwpmsfd; smlkfsd
 */
 function createController(createId) {
     if (isTttt) {
@@ -124,9 +126,9 @@ function createController(createId) {
         createElem.append(head3);
 
         let button1 = document.createElement("BUTTON");
-        button1.textContent = "Add images";
+        button1.textContent = "Add image";
         button1.className = "main-button";
-        button1.onclick = increaseImages('images-count');
+        button1.onclick = increaseImages('images-count', 'main-nav');
         createElem.append(button1);
 
         let input = document.createElement("INPUT");
