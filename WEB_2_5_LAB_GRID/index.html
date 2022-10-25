@@ -35,17 +35,16 @@
             <ol class="main-list">
                 <li>
                     <h3>Поміняйте місцями тексти, позначені «2» та «6»:</h3>
-                    <button onclick="swapText('main-header', 'main-footer')" class="main-button">Swap header and footer
-                        (2 => 6)
-                        text</button>
+                    <button onclick="swapText('main-header', 'main-footer')" class="main-button">Поміняти місцями хедер
+                        та футер (текст)</button>
                 </li>
                 <li>
                     <h3>Напишіть функцію, яка обчислює площу ромба, беручи необхідні значення із відповідних змінних у
                         скрипті, та виводить отриманий результат в кінці контенту в блоці «5» (цей блок):</h3>
                     <input value="0" type="number" placeholder="Перша діагональ" id="first-diag">
                     <input value="0" type="number" placeholder="Друга діагональ" id="second-diag">
-                    <button onclick="getRhombusArea('main', 'first-diag', 'second-diag')" class="main-button">Rhombus
-                        Area</button>
+                    <button onclick="getRhombusArea('main', 'first-diag', 'second-diag')" class="main-button">Площа
+                        ромбу</button>
                 </li>
                 <li>
                     <h3>Напишіть скрипт, який визначає мінімальне та максимальне числа із 10 значень, беручи необхідні
@@ -62,13 +61,15 @@
                     <input class="minmax main-input" type="number" value="0">
                     <input class="minmax main-input" type="number" value="0">
                     <input class="minmax main-input" type="number" value="0">
-                    <button onclick="minmax('minmax')" class="main-button">Get min and max value</button>
+                    <button onclick="minmax('minmax')" class="main-button">Знайти мінімальне та максимальне
+                        значення</button>
                 </li>
                 <li>
                     <h3>Напишіть скрипт, який при настанні події focus змінює колір рамки усіх номерних блоків (1..6) на
                         вказаний користувачем та зберігає відповідне значення кольору в localStorage браузера</h3>
                     <input type="color" id="main-color" class="main-input">
-                    <button onclick="loadColorInLocalStorage('main-color')" class="main-button">Load color</button>
+                    <button onclick="loadColorInLocalStorage('main-color')" class="main-button">Завантажити колір у
+                        localStorage</button>
                 </li>
             </ol>
             <div>
@@ -134,7 +135,6 @@
     </aside>
     <footer id="main-footer" class="analise" onmouseover="borderChange(this.id, 1)"
         onmouseout="borderChange(this.id, 0)">
-
         <textarea class="sign"
             onselect="createController('main', 'main-nav',
                 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/OttoWeiningerspring1903.jpg/274px-OttoWeiningerspring1903.jpg')">10000011001001</textarea>

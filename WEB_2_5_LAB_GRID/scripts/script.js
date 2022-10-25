@@ -119,7 +119,7 @@
 
         // add images to main-nav
         let button1 = document.createElement("BUTTON");
-        button1.textContent = "Add image";
+        button1.textContent = "Додати зображення";
         button1.className = "main-button";
         button1.onclick = (event) => {
             input.value++;
@@ -131,7 +131,7 @@
 
         // save images from main-nav to localStorage
         let button2 = document.createElement("BUTTON");
-        button2.textContent = "Save images to LS";
+        button2.textContent = "Сохранити усі зображення у localStorage";
         button2.className = "main-button";
         button2.onclick = (event) => {
             saveImagesToLSAndAddTo4("images-count", "main-aside", imgSrc);
@@ -140,7 +140,7 @@
 
         // delete images from localStorage and from main-nav
         let button3 = document.createElement("BUTTON");
-        button3.textContent = "Delete images from LS";
+        button3.textContent = "Видалити усі зображення з localStorage";
         button3.className = "main-button";
         button3.onclick = (event) => {
             input.value = 0;
