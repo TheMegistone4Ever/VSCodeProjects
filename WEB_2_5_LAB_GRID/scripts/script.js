@@ -58,7 +58,7 @@
     window.addEventListener('load', (event) => {
         if (document.cookie != "max-element=; min-element=") {
             if (confirm("cookies: " + document.cookie + "\nClear cookies?")) {
-                document.cookie = "max-element=;"
+                document.cookie = "max-element=;";
                 document.cookie = "min-element=;";
                 location.reload();
             } else {
@@ -76,8 +76,8 @@
             if (elements[el].value > max) max = elements[el].value;
         }
 
-        document.cookie = "min-element= " + min + ";";
-        document.cookie = "max-element= " + max + ";";
+        document.cookie = "min-element= " + min + ";expires=Thu, 01 Jan 1970 00:00:00 GMT";
+        document.cookie = "max-element= " + max + ";expires=Thu, 01 Jan 1970 00:00:00 GMT";
 
         alert("min-element=" + min + ";\nmax element=" + max + ";");
     }
