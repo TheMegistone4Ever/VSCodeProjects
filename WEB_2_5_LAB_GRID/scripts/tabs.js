@@ -14,10 +14,6 @@ function addTab() {
     localStorage.setItem(tabCountName, Number(localStorage.getItem(tabCountName)) + 1);
 }
 
-function readLineFromFile() {
-    return;
-}
-
 window.addEventListener('load', (event) => {
     list = document.getElementById("tabs");
     for (let key of Object.keys(localStorage).reverse()) {
