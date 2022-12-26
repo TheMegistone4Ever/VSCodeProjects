@@ -1,5 +1,4 @@
 let tabCountName = "countOfTabs", tabs = Number(localStorage.getItem(tabCountName)), limitOfTabs = 12, tabNameInLS = "tab";
-
 function addTab() {
     if (++tabs >= limitOfTabs) return;
     elem = document.createElement("LI");
