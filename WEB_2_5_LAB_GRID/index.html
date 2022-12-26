@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weblab</title>
     <link rel="stylesheet" href="./styles/grid_layout.css">
-    <script src="./scripts/script.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="./styles/tabs.css">
 </head>
 
 <body>
@@ -32,46 +32,58 @@
             </div>
         </section>
         <main id="main" onmouseover="borderChange(this.id, 1)" onmouseout="borderChange(this.id, 0)">
-            <ol class="main-list">
-                <li>
-                    <h3>Поміняйте місцями тексти, позначені «2» та «6»:</h3>
-                    <button onclick="swapText('main-header', 'main-footer')" class="main-button">Поміняти місцями хедер
-                        та футер (текст)</button>
-                </li>
-                <li>
-                    <h3>Напишіть функцію, яка обчислює площу ромба, беручи необхідні значення із відповідних змінних у
-                        скрипті, та виводить отриманий результат в кінці контенту в блоці «5» (цей блок):</h3>
-                    <input value="0" type="number" placeholder="Перша діагональ" id="first-diag">
-                    <input value="0" type="number" placeholder="Друга діагональ" id="second-diag">
-                    <button onclick="getRhombusArea('main', 'first-diag', 'second-diag')" class="main-button">Площа
-                        ромбу</button>
-                </li>
-                <li>
-                    <h3>Напишіть скрипт, який визначає мінімальне та максимальне числа із 10 значень, беручи необхідні
-                        значення із відповідної форми в блоці «5», а отриманий результат виводить за допомогою
-                        діалогового вікна
-                        та зберігає в cookies:</h3>
-                    <input class="minmax main-input" type="number" value="0">
-                    <input class="minmax main-input" type="number" value="0">
-                    <input class="minmax main-input" type="number" value="0">
-                    <input class="minmax main-input" type="number" value="0">
-                    <input class="minmax main-input" type="number" value="0">
-                    <input class="minmax main-input" type="number" value="0">
-                    <input class="minmax main-input" type="number" value="0">
-                    <input class="minmax main-input" type="number" value="0">
-                    <input class="minmax main-input" type="number" value="0">
-                    <input class="minmax main-input" type="number" value="0">
-                    <button onclick="minmax('minmax')" class="main-button">Знайти мінімальне та максимальне
-                        значення</button>
-                </li>
-                <li>
-                    <h3>Напишіть скрипт, який при настанні події focus змінює колір рамки усіх номерних блоків (1..6) на
-                        вказаний користувачем та зберігає відповідне значення кольору в localStorage браузера</h3>
-                    <input type="color" id="main-color" class="main-input">
-                    <button onclick="loadColorInLocalStorage('main-color')" class="main-button">Завантажити колір у
-                        localStorage</button>
-                </li>
-            </ol>
+            <div style="height: 15rem;">
+                <button onclick="addTab()" class="main-button">Додати вкладку</button>
+                <ul class="tabs" role="tablist" id="tabs"></ul>
+            </div>
+
+            <div>
+                <ol class="main-list">
+                    <li>
+                        <h3>Поміняйте місцями тексти, позначені «2» та «6»:</h3>
+                        <button onclick="swapText('main-header', 'main-footer')" class="main-button">Поміняти місцями
+                            хедер
+                            та футер (текст)</button>
+                    </li>
+                    <li>
+                        <h3>Напишіть функцію, яка обчислює площу ромба, беручи необхідні значення із відповідних змінних
+                            у
+                            скрипті, та виводить отриманий результат в кінці контенту в блоці «5» (цей блок):</h3>
+                        <input value="0" type="number" placeholder="Перша діагональ" id="first-diag">
+                        <input value="0" type="number" placeholder="Друга діагональ" id="second-diag">
+                        <button onclick="getRhombusArea('main', 'first-diag', 'second-diag')" class="main-button">Площа
+                            ромбу</button>
+                    </li>
+                    <li>
+                        <h3>Напишіть скрипт, який визначає мінімальне та максимальне числа із 10 значень, беручи
+                            необхідні
+                            значення із відповідної форми в блоці «5», а отриманий результат виводить за допомогою
+                            діалогового вікна
+                            та зберігає в cookies:</h3>
+                        <input class="minmax main-input" type="number" value="0">
+                        <input class="minmax main-input" type="number" value="0">
+                        <input class="minmax main-input" type="number" value="0">
+                        <input class="minmax main-input" type="number" value="0">
+                        <input class="minmax main-input" type="number" value="0">
+                        <input class="minmax main-input" type="number" value="0">
+                        <input class="minmax main-input" type="number" value="0">
+                        <input class="minmax main-input" type="number" value="0">
+                        <input class="minmax main-input" type="number" value="0">
+                        <input class="minmax main-input" type="number" value="0">
+                        <button onclick="minmax('minmax')" class="main-button">Знайти мінімальне та максимальне
+                            значення</button>
+                    </li>
+                    <li>
+                        <h3>Напишіть скрипт, який при настанні події focus змінює колір рамки усіх номерних блоків
+                            (1..6) на
+                            вказаний користувачем та зберігає відповідне значення кольору в localStorage браузера</h3>
+                        <input type="color" id="main-color" class="main-input">
+                        <button onclick="loadColorInLocalStorage('main-color')" class="main-button">Завантажити колір у
+                            localStorage</button>
+                    </li>
+                </ol>
+            </div>
+
             <div>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae totam sit commodi modi
                     consectetur autem suscipit porro molestiae ex! Necessitatibus aspernatur, accusamus doloremque
@@ -158,6 +170,8 @@
             <p>AI Boost</p>
         </div>
     </footer>
+    <script src="./scripts/script.js" type="text/javascript"></script>
+    <script src="./scripts/tabs.js" type="text/javascript"></script>
 </body>
 
 </html>

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weblab</title>
     <link rel="stylesheet" href="./styles/grid_layout.css">
-    <script src="./scripts/script.js"></script>
+    <link rel="stylesheet" href="./styles/tabs.css">
 </head>
 
 <body>
@@ -29,6 +29,11 @@
             <p>Є питання? - звертайтеся!</p>
         </section>
         <main id="main">
+            <div style="height: 15rem;">
+                <button onclick="addTab()" class="main-button">Додати вкладку</button>
+                <ul class="tabs" role="tablist" id="tabs"></ul>
+            </div>
+
             <h2>Наші посилання:</h2>
             <a href="https://www.instagram.com/megistonenew/" class="main-link" target="_blank">Instagram</a><br>
             <a href="https://github.com/TheMegistone4Ever" class="main-link" target="_blank">Github</a><br>
@@ -99,6 +104,8 @@
             <p>AI Boost</p>
         </div>
     </footer>
+    <script src="./scripts/script.js" type="text/javascript"></script>
+    <script src="./scripts/tabs.js" type="text/javascript"></script>
 </body>
 
 </html>
