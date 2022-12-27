@@ -58,8 +58,8 @@
     window.addEventListener('load', (event) => {
         if (document.cookie != "max-element=; min-element=") {
             if (confirm("cookies: " + document.cookie + "\nClear cookies?")) {
-                document.cookie = "max-element=;";
-                document.cookie = "min-element=;";
+                document.cookie = "max-element=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+                document.cookie = "min-element=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
                 location.reload();
             } else {
                 alert("Cookies haven't been deleted, please reload the web page");
@@ -69,15 +69,15 @@
 
     function minmax(classname) {
         let elements = document.getElementsByClassName(classname);
-        let min = elements[0].value;
-        let max = elements[0].value;
+        let min = Number(elements[0].value);
+        let max = Number(elements[0].value);
         for (let el = 1; el < elements.length; ++el) {
-            if (elements[el].value < min) min = elements[el].value;
-            if (elements[el].value > max) max = elements[el].value;
+            if (Number(elements[el].value) < min) min = Number(elements[el].value);
+            if (Number(elements[el].value) > max) max = Number(elements[el].value);
         }
 
-        document.cookie = "min-element= " + min + ";expires=Thu, 01 Jan 1970 00:00:00 GMT";
-        document.cookie = "max-element= " + max + ";expires=Thu, 01 Jan 1970 00:00:00 GMT";
+        document.cookie = "min-element= " + min;
+        document.cookie = "max-element= " + max;
 
         alert("min-element=" + min + ";\nmax element=" + max + ";");
     }

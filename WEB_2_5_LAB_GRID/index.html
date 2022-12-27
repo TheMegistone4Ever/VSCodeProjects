@@ -8,6 +8,7 @@
     <title>Weblab</title>
     <link rel="stylesheet" href="./styles/grid_layout.css">
     <link rel="stylesheet" href="./styles/tabs.css">
+    <link rel="stylesheet" href="./styles/balls.css">
 </head>
 
 <body>
@@ -32,6 +33,11 @@
             </div>
         </section>
         <main id="main" onmouseover="borderChange(this.id, 1)" onmouseout="borderChange(this.id, 0)">
+            <div id="background">
+                <div id="ball1"></div>
+                <div id="ball2"></div>
+            </div>
+
             <div style="height: 15rem;">
                 <button onclick="addTab()" class="main-button">Додати вкладку</button>
                 <ul class="tabs" role="tablist" id="tabs"></ul>

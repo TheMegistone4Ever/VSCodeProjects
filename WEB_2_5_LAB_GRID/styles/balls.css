@@ -1,0 +1,62 @@
+@keyframes bounceY {
+    0% {
+        transform: translateY(-310px);
+    }
+
+    50% {
+        transform: translateY(310px);
+    }
+
+    100% {
+        transform: translateY(-310px);
+    }
+}
+
+@keyframes bounceX {
+    0% {
+        transform: translateX(-420px);
+    }
+
+    50% {
+        transform: translateX(420px);
+    }
+
+    100% {
+        transform: translateX(-420px);
+    }
+}
+
+#background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    height: calc(100vh - 50px);
+    width: calc(100% - 10px);
+}
+
+#ball1 {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    animation: bounceX 3s linear infinite;
+    background-color: #FC0;
+}
+
+#ball2 {
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    animation: bounceY 2s linear infinite;
+    background-color: #900;
+}
+
+#canvasOne {
+    height: 100%;
+    width: 100%;
+}
+
+#canvasOne,
+#background {
+    border: 5px solid #060;
+}
