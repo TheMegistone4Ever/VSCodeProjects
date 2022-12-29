@@ -28,10 +28,22 @@
     <div id="main-center">
         <section id="top-main-section">
             <p>Є питання? - звертайтеся!</p>
+            <button onclick="close()" class="main-button">Close</button>
+            <button onclick="play()" class="main-button">Play</button>
         </section>
-        <canvas id="canvasOne">
-            Your browser does not support the HTML 5 Canvas.
-        </canvas>
+
+        <div id="work">
+            <div id="controls">
+                <button onclick="start()" class="main-button" id="start-button">Start</button>
+                <button onclick="stop()" class="main-button" id="stop-button">Stop</button>
+                <button onclick="reload()" class="main-button" id="reload-button">Reload</button>
+            </div>
+            <div id="anim">
+                <canvas id="canvasOne">
+                    Your browser does not support the HTML 5 Canvas.
+                </canvas>
+            </div>
+        </div>
 
         <div style="height: 15rem;">
             <button onclick="addTab()" class="main-button">Додати вкладку</button>

@@ -20,7 +20,7 @@ body {
     background-color: #666;
     color: #CCC;
     font-size: 1.5rem;
-    width: 20rem;
+    max-width: 20rem;
     word-wrap: normal;
     cursor: pointer;
     padding: .1rem;

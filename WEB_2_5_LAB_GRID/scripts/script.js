@@ -54,11 +54,12 @@
 }
 
 // task 3
+/*
 {
     window.addEventListener('load', (event) => {
         if (document.cookie != "max-element=; min-element=") {
             if (confirm("cookies: " + document.cookie + "\nClear cookies?")) {
-                document.cookie = "max-element=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+                document.cookie = "max-element=;expires=Thu, 01 Jan 1970 00:00:00 GMT;";
                 document.cookie = "min-element=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
                 location.reload();
             } else {
@@ -76,13 +77,13 @@
             if (Number(elements[el].value) > max) max = Number(elements[el].value);
         }
 
-        document.cookie = "min-element= " + min;
+        document.cookie = "min-element= " + min + ";";
         document.cookie = "max-element= " + max;
 
         alert("min-element=" + min + ";\nmax element=" + max + ";");
     }
 }
-
+*/
 // task 4
 {
     function loadColorInLocalStorage(id) {
